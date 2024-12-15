@@ -29,7 +29,18 @@ body {
     body {
         margin: 1em auto;
         max-width: 90%;
-		margin-top: 20%;
+        margin-top: 20%;
+    }
+
+    /* 표에 좌우 스크롤 추가 */
+    .collection-content {
+        overflow-x: auto; /* 좌우 스크롤을 허용 */
+        -webkit-overflow-scrolling: touch; /* 스크롤 부드럽게 */
+    }
+
+    .collection-content table {
+        width: 100%; /* 테이블 너비를 100%로 설정 */
+        table-layout: auto; /* 열 크기가 콘텐츠에 맞게 자동으로 조정 */
     }
 }
 
