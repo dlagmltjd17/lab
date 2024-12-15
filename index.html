@@ -1,737 +1,138 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2025년 상반기 콘텐츠랩 마루온 1기 멤버 모집 공고</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-default_background {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
-.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.floating-button {
-  position: fixed;
-  bottom: 20px; /* 하단 여백 */
-  right: 20px; /* 우측 여백 */
-  z-index: 1000;  /* 레이어 우선도 */
-  color: white;  /* 글자색 */
-  font-weight: bold;
-  padding: 15px 20px;
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  font-size: 16px;
-  background-color: #ea3e24;  /* 배경색 */
-  transition: background-color 0.3s, transform 0.3s; 
-}
-
-.floating-button:hover {
-  background-color: #000000; 
-  transform: scale(1.1); 
-}
-
-.home-button {
-  position: fixed;
-  top: 20px; /* 상단 여백 */
-  left: 20px; /* 좌측 여백 */
-  z-index: 1000;  /* 레이어 우선도 */
-  color: white;  /* 글자색 */
-  font-weight: bold;
-  padding: 12px 12px;
-  border-radius: 50px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  font-size: 12px;
-  background-color: #ea3e24;  /* 배경색 */
-  transition: background-color 0.3s, transform 0.3s; 
-}
-
-.home-button:hover {
-  background-color: #000000; 
-  transform: scale(1.1); 
-}
-	
-</style></head><body><article id="23c077ec-3456-46d9-a5e7-f40130e1dc2f" class="page sans"><header><h1 class="page-title">2025년 상반기 창업실습 - 콘텐츠랩 마루온 1기 멤버 모집 공고</h1><p class="page-description"></p></header><div class="page-body"><p id="402006e5-af3e-4623-88d3-7dc0fbc071ad" class="">미디어콘텐츠 창업동아리 <strong>콘텐츠랩 마루온</strong>에서 함께할 멤버를 모집합니다.</p><p id="15b2628f-aa35-80ca-9919-faa8a2049c32" class="">
-</p><h2 id="f96a4f66-f63c-4d05-a80b-53fd62f8ed83" class="">콘텐츠랩 마루온이 무엇인가요?</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9021566c-2dc6-4e88-b785-958327577623"><div style="font-size:1.5em"><span class="icon">🏫</span></div><div style="width:100%"><strong>콘텐츠랩 마루온</strong>은 <strong>청운대학교 인천캠퍼스 창업 동아리</strong>로, 청운대학교 <strong>창업실습</strong> 교과 및 미디어콘텐츠 제작사 <strong>프로덕션 마루온</strong>과 연계하여 운영됩니다.</div></figure><p id="5fd0d600-2b84-414e-81e9-c8c44eea5fbd" class="">
-</p><h2 id="2a843184-5870-4092-b21d-c5b5e356abd2" class="">프로덕션 마루온은 이런 회사에요!</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9f268386-8817-47b2-b011-ad2792ecfe7b"><div style="font-size:1.5em"><span class="icon">🙋🏼‍♂️</span></div><div style="width:100%"><strong>프로덕션 마루온</strong>은 인천광역시 송도동 소재의 <strong>영화비디오물 및 방송프로그램 제작업 </strong>및 <strong>전자상거래 소매업</strong> 업종의 <strong>콘텐츠 제작사</strong>로, 광고, 영화, 웹 드라마, 뮤직 비디오 등 <strong>영상을 기반으로 하는 모든 콘텐츠</strong>와 <strong>다양한 MD 상품</strong>을 제작합니다.</div></figure><p id="e9c936cf-529e-4168-a0ef-9c007684477e" class="">
-</p><h2 id="4de6179b-667f-43d6-bc0a-6e52fe386994" class="">콘텐츠랩 마루온에서는 무엇을 하나요?</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6567d3fc-a8f2-474e-a0ab-741a2a3b3646"><div style="font-size:1.5em"><span class="icon">📺</span></div><div style="width:100%"><strong>콘텐츠랩 마루온</strong>에서는 각종 미디어콘텐츠를 제작합니다.<p id="15b2628f-aa35-80a0-8f65-fc924d675130" class=""><strong>콘텐츠랩 마루온</strong>만의 오리지널 콘텐츠는 물론, <strong>프로덕션 마루온</strong>과 함께 내·외부 상업 콘텐츠를 제작하기도 합니다.</p><p id="15b2628f-aa35-80f5-97e5-f1f8c6934d29" class="">클라이언트 및 업계 종사자들과의 협업을 통해 실무 위주의 영상 제작을 경험해볼 수 있습니다.</p><blockquote id="4e05eb53-215f-472b-9a90-937ec1dd974e" class="">창업실습 교과에 할당된 시간을 <strong>초과</strong>하여 <strong>외부 상업 활동</strong>에 참여할 시 별도의 정산금을 지급하며, 활동에 필요한 업무용 이메일, 사내 메신저, 명함 등 <strong>사원에 준하는 인프라</strong>를 무상으로 지원해드립니다.</blockquote><p id="15b2628f-aa35-802a-b796-dd54f62ee897" class="">※ 상업 활동에 대한 페이는 프리랜서 계약을 통해 원천징수 3.3%를 공제 후 지급하며, 학기별 활동 종료 후 일괄 정산해 지급합니다.</p></div></figure><p id="bf490f47-4823-417a-ad70-f8c4e3e2695e" class="">
-</p><h2 id="a2fd331c-0fbc-472e-865b-30bbabbdbb90" class="">콘텐츠랩 마루온에는 누가 지원할 수 있나요?</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4f12dc43-ef23-4899-b87e-e4af37290aa1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>콘텐츠랩 마루온</strong>에는 2025학년도 기준으로 <strong>청운대학교 인천캠퍼스</strong>에 재학 중인 <strong>2~4학년</strong> 학생(24년 기준 1~3학년) 중, <strong>창업실습II</strong> 교양 교과를 수강하지 않았으며 교양 학점 졸업요건을 충족하지 않은 <strong>누구나</strong> 지원할 수 있습니다.<blockquote id="766cdd82-c9ab-4436-b863-279fc2fea2d1" class="">지원 기준에 해당되지 않는다면 아래 토글을 확인해주시기 바랍니다.<ul id="802b3baf-b8b9-4996-b2b1-0f05581747d6" class="toggle"><li><details close=""><summary><strong><mark class="highlight-default">❗ 지원 기준에 해당되지 않는 희망자의 경우</mark></strong></summary><p id="57934503-2555-4dfa-aaf5-57b1ab10de4d" class=""><mark class="highlight-default">아래 항목에 해당되는 희망자의 경우 </mark><a href="mailto:alpha@maruon.net">alpha@maruon.net</a><mark class="highlight-default"> 으로 연락해 주세요.</mark></p><ul id="1ca9721e-56d3-4611-a2d7-4174a3303b95" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">휴학생</mark></li></ul><ul id="4294e32a-e699-488f-bedb-fced2ad28517" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">5학년 이상의 연차초과자</mark></li></ul><ul id="2e37ead3-f6cb-474d-94f3-acbd3869f09b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">25학번 신입생</mark></li></ul><ul id="cd1bb4df-63f7-49de-b182-102b77341f53" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">이미 창업실습I </mark>· 창업실습II 교과를 수강한 학생</li></ul><ul id="8cf4f865-b6c2-41ab-a460-013a0ff27739" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default">졸업요건 잔여 교양 학점이 1학점 미만(수강한 교양 학점이 42학점 이상)인 경우 등</mark></li></ul></details></li></ul></blockquote></div></figure><p id="15b2628f-aa35-8024-879f-e1fd1c8421e7" class="">
-</p><h2 id="15b2628f-aa35-8080-bc6a-f4b15c65d0e5" class="">콘텐츠랩 마루온의 모집 분야는 어떻게 되나요?</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15b2628f-aa35-80af-bd66-e1bd0a76448f"><div style="font-size:1.5em"><span class="icon">🧚🏼</span></div><div style="width:100%">지원 가능한 특화 파트는 다음과 같아요.<ul id="15b2628f-aa35-805e-9a2d-eab5236b867a" class="bulleted-list"><li style="list-style-type:disc"><strong>영상콘텐츠 부문</strong><ul id="15b2628f-aa35-80a9-a466-d25314003174" class="bulleted-list"><li style="list-style-type:circle">영상촬영 특화 멤버 (기획, 연출, 촬영 등)</li></ul><ul id="15b2628f-aa35-8075-86fe-e89e72f1f00e" class="bulleted-list"><li style="list-style-type:circle">영상편집 특화 멤버 (기획, 연출, 편집 등)</li></ul></li></ul><ul id="15b2628f-aa35-80f8-90b2-fa6ee3472277" class="bulleted-list"><li style="list-style-type:disc"><strong>디자인 부문</strong><ul id="0f6c9606-d3f7-40e4-a0d4-f8d881272774" class="bulleted-list"><li style="list-style-type:circle">웹 및 디자인 특화 멤버 (프론트엔드, 포토샵 등)</li></ul></li></ul><ul id="15b2628f-aa35-80a5-bfad-f355052bbb31" class="bulleted-list"><li style="list-style-type:disc"><strong>경영 및 세무회계 부문</strong><ul id="7ec2cca7-dcd5-4791-bdb8-a627cd6ac979" class="bulleted-list"><li style="list-style-type:circle">경영 및 세무회계 특화 멤버 (장부 작성, 세금계산서 발행 등)</li></ul></li></ul></div></figure><p id="5d61414e-a561-4b62-8668-9da0a28bf84c" class="">
-</p><h2 id="22ec6280-7f90-447c-bfa2-a000de5da0e9" class="">콘텐츠랩 마루온에서는 어떤 혜택이 제공되나요?</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c7fba176-2914-4071-9df9-e276000c9616"><div style="font-size:1.5em"><span class="icon">✏️</span></div><div style="width:100%"><strong>교양 학점 3학점 인정</strong><blockquote id="3ff6a36c-5784-4f1d-8613-62db2fb99e93" class="">수강 학점은 P/F 교양 교과인 <strong>창업실습I · 창업실습II</strong> 교과로 반영됩니다.</blockquote></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1360b976-d32b-4193-b876-2b402c8175fa"><div style="font-size:1.5em"><span class="icon">👨🏼‍💻</span></div><div style="width:100%"><strong>채용 시 우선선발 및 경력 인정</strong><blockquote id="6aaecfa7-43b7-4e25-ae95-d0b355a497ea" class="">프로덕션 마루온 또는 관계사에서 채용 진행 시 우선 선발하며, 입사 시 콘텐츠랩 활동 내역을 경력으로 인정해 드립니다.</blockquote></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a664577e-858c-459a-a02f-de53dd33e07c"><div style="font-size:1.5em"><span class="icon">🎥</span></div><div style="width:100%"><strong>촬영 장비 무상 대여</strong><blockquote id="46735986-157b-4acc-b930-8faf78ddeb08" class="">활동 기간동안 프로덕션 마루온이 보유한 촬영 장비를 무상으로 대여해 드립니다.<ul id="ffc1f432-dd42-4cf4-8766-536df05970f2" class="toggle"><li><details close=""><summary><mark class="highlight-default"><strong>🛒 보유 중인 촬영 장비 (2024년 12월 기준)</strong></mark></summary><p id="b92fb0d9-4d5d-45fd-8854-1b488e432ab1" class="">해당 일자를 기준으로 마루온이 보유한 장비는 다음과 같아요.</p><ul id="b1eca194-f702-4269-bdb8-29ae00b18990" class="toggle"><li><details close=""><summary><strong>카메라</strong></summary><ul id="965eb66f-600c-4bb3-a338-f1bfdf471197" class="bulleted-list"><li style="list-style-type:disc">SONY ZV-E1 풀프레임 미러리스 (SMALLRIG 케이지 포함)</li></ul><ul id="911c3db1-736c-43f5-a8ce-21fb2cafda43" class="bulleted-list"><li style="list-style-type:disc">SONY DSC-RX0M2 일체형 컴팩트 카메라 (PULUZ 케이지 포함)</li></ul><ul id="482147b6-7f59-4158-bbef-e14aaaa9227e" class="bulleted-list"><li style="list-style-type:disc">SAMSUNG NX300M 크롭바디 미러리스</li></ul></details></li></ul><ul id="5e54ceee-eb79-49a9-8445-496f212ae1c2" class="toggle"><li><details close=""><summary><strong>렌즈</strong></summary><ul id="5ea1a7cb-036f-4ba4-bb38-fb9750e04462" class="bulleted-list"><li style="list-style-type:disc">SONY FE 24-105mm F4 G OSS (SEL24105G) E마운트 렌즈</li></ul><ul id="1442628f-aa35-807e-9ab9-cb428ac72d81" class="bulleted-list"><li style="list-style-type:disc">SAMYANG RS 21mm F3.5 FE E마운트 렌즈</li></ul><ul id="1532628f-aa35-804c-a7d1-d7259208fb3b" class="bulleted-list"><li style="list-style-type:disc">SAMYANG RS 32mm F2.8 FE E마운트 렌즈</li></ul><ul id="bcf9ea40-f289-48f3-a5d1-b467fd296ce8" class="bulleted-list"><li style="list-style-type:disc">SAMSUNG NX 18-55mm F3.5-5.6 OIS III NX마운트 렌즈</li></ul></details></li></ul><ul id="b26ffaa2-5706-4e39-94f8-4a7fdb232496" class="toggle"><li><details close=""><summary><strong>액세서리</strong></summary><ul id="6c9da619-937a-4265-b9ca-f8098c2a3b5d" class="bulleted-list"><li style="list-style-type:disc">호루스벤누 HVD-1900L 비디오삼각대 (비디오헤드 포함)</li></ul><ul id="905c2d71-22e1-40db-a8ce-d6e613cf0b2c" class="bulleted-list"><li style="list-style-type:disc">37mm~82mm 렌즈 필터 스텝업링</li></ul><ul id="3f66d58d-ef9f-4f8c-9b29-cd6767342deb" class="bulleted-list"><li style="list-style-type:disc">스타라이트 필터 (82mm)</li></ul><ul id="1532628f-aa35-80ff-9cbe-c3f47a82bb09" class="bulleted-list"><li style="list-style-type:disc">BOYA BY-XM6 K2 무선 마이크</li></ul><ul id="1532628f-aa35-801d-ad25-f128b91ffad1" class="bulleted-list"><li style="list-style-type:disc">DJI RS3 PRO 짐벌</li></ul><ul id="1532628f-aa35-8064-82ff-d7faa96cdf1a" class="bulleted-list"><li style="list-style-type:disc">TILTA TGA-PRG2 링그립</li></ul><ul id="1532628f-aa35-808e-8b15-fdb07bc04a43" class="bulleted-list"><li style="list-style-type:disc">YELANGU B100 이지리그 스테디캠</li></ul><ul id="1532628f-aa35-80db-9ab4-fa32e286c5d8" class="bulleted-list"><li style="list-style-type:disc">NEEWER PG002 매트박스</li></ul><ul id="1532628f-aa35-80f2-bba2-fbb463d3da39" class="bulleted-list"><li style="list-style-type:disc">FZ100, V마운트 배터리 다수</li></ul><ul id="1532628f-aa35-801d-afc9-cce7a3616752" class="bulleted-list"><li style="list-style-type:disc">그 외 시네마 리그 셋업</li></ul></details></li></ul><p id="15b2628f-aa35-80b6-a72b-d095626bbcc7" class="">※ 본사 미보유 장비 필요 시, 렌탈 비용을 전액 지원해 드립니다.</p><p id="15b2628f-aa35-809c-aaaf-fe00a91ea8f8" class="">※ 본사 직원이 상주하는 현장에 한해 장비를 무상 대여해 드립니다.</p><p id="cee4b10b-c3f2-4d31-9228-51276f2ce959" class="">※ 본사 스케줄이 있을 경우 대여가 제한될 수 있습니다.</p><p id="15b2628f-aa35-80ab-a2b0-db56107b5cda" class="">※ 대여 시 분실, 파손에 대한 책임은 대여자 본인에게 있습니다.</p></details></li></ul><ul id="05b1d417-6be4-4db4-af3e-3bfc2bc1c6c2" class="toggle"><li><details close=""><summary><mark class="highlight-default"><strong>🔜 도입 예정 촬영 장비</strong></mark></summary><p id="0a7ecbef-b1a6-4683-8ebf-6fbb213fa3a2" class="">도입될 예정인 장비들은 다음과 같아요.</p><ul id="537d3cc9-a651-4733-bbeb-bee3261556ef" class="toggle"><li><details close=""><summary><strong>카메라</strong></summary><ul id="9d500514-d509-4bc8-a717-23b337813caf" class="bulleted-list"><li style="list-style-type:disc">SONY ILME-FX3 시네마 라인 풀프레임 미러리스</li></ul></details></li></ul><ul id="27064434-8939-4f8f-8197-f41490fd511f" class="toggle"><li><details close=""><summary><strong>렌즈</strong></summary><ul id="15b2628f-aa35-8081-9452-d03dc10b8652" class="bulleted-list"><li style="list-style-type:disc">TAMRON 70-180mm F2.8 Di III VXD (A056) FE마운트 렌즈</li></ul><ul id="921e65a7-a068-4884-9614-ac79c2f38bf6" class="bulleted-list"><li style="list-style-type:disc">SONY FE PZ 16-35mm F4 G (SELP1635G) FE마운트 렌즈</li></ul><ul id="15b2628f-aa35-804d-9707-e7e4afea872f" class="bulleted-list"><li style="list-style-type:disc">TAMRON 28-75mm F2.8 Di III RXD (A036) FE마운트 렌즈</li></ul></details></li></ul></details></li></ul></blockquote></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1442628f-aa35-8014-b951-f13068be537b"><div style="font-size:1.5em"><span class="icon">📖</span></div><div style="width:100%"><strong>활동 기여분에 대한 포트폴리오 목적 이용 허가</strong><blockquote id="23cfa34e-153e-4d6d-82af-e9150ee24395" class="">제작 활동에 참여한 작품을 포트폴리오 목적으로 사용할 수 있도록, 편집본 및 원본에 대한 마스터 파일 아카이빙을 지원합니다.</blockquote></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ab560c74-960f-4aa2-a9e2-bf6d89c81afb"><div style="font-size:1.5em"><span class="icon">🚍</span></div><div style="width:100%"><strong>외부 상업 활동 시 교통비 추가 지원</strong><blockquote id="82658843-0484-4590-9202-2102e9d7a874" class="">촬영, 미팅 등 외부 상업 활동에 참석할 경우, 페이에 교통비를 추가로 지원해 드립니다.</blockquote></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9f3cff96-6345-4394-9709-5c6e3531f417"><div style="font-size:1.5em"><span class="icon">🍱</span></div><div style="width:100%"><strong>외부 활동 시 식사 지원</strong><blockquote id="82a2e27f-e60b-41ed-829c-58e5a19c41ea" class="">촬영 등 외부 일정에 참여 시, 식대를 전액 지원합니다.</blockquote></div></figure><p id="7f8fa002-8c08-4606-8a09-957bde4d1727" class="">
-</p><h2 id="2ef16bd4-38e2-4f8d-bee2-00394df06603" class="">창업실습 교과의 진행 일정이 궁금해요.</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15b2628f-aa35-80c1-af9e-e817281c1488"><div style="font-size:1.5em"><span class="icon">📆</span></div><div style="width:100%">세부 일정의 경우 본사 스케줄 및 학사일정에 따라 변동될 수 있어요.<ul id="15b2628f-aa35-804d-bd66-fa18e4d09576" class="toggle"><li><details close=""><summary><strong>🏳️ 1기 일정 간단히 보기</strong></summary><div id="15b2628f-aa35-8080-9c38-f1c6ed5261ed" class="collection-content"><h4 class="collection-title">창업실습 일정</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hexagon_gray.svg" style="width:14px;height:14px"/></span>창업실습 교과 일정</th><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>날짜</th></tr></thead><tbody><tr id="15b2628f-aa35-80b4-840f-e2eaddb91d85"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/child_gray.svg"/>1기 멤버 지원 기간 (네이버 폼)</a></td><td class="cell-P&gt;Wz"><time>@2024/12/16 오전 12:00 → 2024/12/24 오후 11:59</time></td></tr><tr id="15b2628f-aa35-80b2-8b21-e0346a25c228"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/conversation_gray.svg"/>1기 멤버 면접 기간 (청운대학교 인천캠퍼스)</a></td><td class="cell-P&gt;Wz"><time>@2024/12/26 → 2025/01/03</time></td></tr><tr id="15b2628f-aa35-80f4-8110-f717b387ee9c"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/log-in_gray.svg"/>1기 최종 합격자 발표 (합격자에 한해 개별 공지)</a></td><td class="cell-P&gt;Wz"><time>@2025/01/06 오후 6:00</time></td></tr><tr id="15b2628f-aa35-80d5-b32b-dff1db0c77a7"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/shop_gray.svg"/>장바구니 수강신청</a></td><td class="cell-P&gt;Wz"><time>@2025/01/13 → 2025/01/17</time></td></tr><tr id="15b2628f-aa35-8061-a5fd-c1a2de15f063"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/checklist_gray.svg"/>수강신청</a></td><td class="cell-P&gt;Wz"><time>@2025/02/03 → 2025/02/07</time></td></tr><tr id="15b2628f-aa35-808e-a7d8-d53c16ba952d"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/following_gray.svg"/>창업실습 교과 시간표 조율</a></td><td class="cell-P&gt;Wz"><time>@2025/02/10 → 2025/02/12</time></td></tr><tr id="15b2628f-aa35-8018-9fc1-e59bcb35a965"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/book_gray.svg"/>개강</a></td><td class="cell-P&gt;Wz"><time>@2025/03/03</time></td></tr><tr id="15b2628f-aa35-80a8-81a8-fa138ef39366"><td class="cell-title"><img class="icon" src="https://www.notion.so/icons/rubber-stamp_gray.svg"/>사업계획서 제출 및 성과발표회</a></td><td class="cell-P&gt;Wz"><time>@2025/06/09 → 2025/06/13</time></td></tr></tbody></table><br/><br/></div></details></li></ul></li></ul></div></figure><p id="769f8858-4cb3-4fc9-a70f-0a68ede7bb78" class="">
-</p><h2 id="15b2628f-aa35-80ef-b979-dec45f46a71e" class="">자주 묻는 질문</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15b2628f-aa35-80c9-b482-ca538c10902b"><div style="font-size:1.5em"><span class="icon">💁🏼‍♀️</span></div><div style="width:100%">추가적인 문의사항이 있다면 아래 링크를 통해 연락주세요. 확인 즉시 상세히 안내해 드리겠습니다.<p id="15b2628f-aa35-802c-98c6-d4d5a37abcf9" class=""><mark class="highlight-red"><strong><a href="https://open.kakao.com/o/sI1ZrZ4g">➡️ 1:1 문의 바로가기</a></strong></mark></p><div><hr id="15b2628f-aa35-801d-a5db-dd09e3f3fb7b"/></div><ul id="15b2628f-aa35-80b0-8142-c1be1a4df6c9" class="toggle"><li><details close=""><summary>① 창업실습 교과의 수업 시간이 알고 싶어요.</summary><p id="15b2628f-aa35-8085-b250-d526203d9f4f" class="">Ⓐ 창업실습 교과는 주차당 3시간, 학기당 15주차의 수업으로 구성된 교양 교과입니다. 별도로 수업 시간이 정해져있지 않으며, 합격자 여러분들의 수강신청이 완료된 후 2월 중순에 공강 시간을 취합한 후 수업 시간이 확정될 예정입니다.</p></details></li></ul><ul id="15b2628f-aa35-8005-807a-da1772182b90" class="toggle"><li><details close=""><summary>② 모집 분야에서 특화 파트를 선택하기 힘들어요.</summary><p id="c9159741-6591-4690-9f22-996b4a04f11d" class="">Ⓐ 특화 파트는 인원 선발에 있어 참고할 목적으로 제공하는 선택지이며, 선발 점수에 영향이 없습니다. 상대적인 기준이니 자신이 가장 자신 있는 파트 또는 경험을 원하는 파트를 선택해주세요.</p></details></li></ul><ul id="15b2628f-aa35-804c-be37-dcc339495a8d" class="toggle"><li><details close=""><summary>③ 성과발표회가 무엇인가요?</summary><p id="6a9d3e19-2dec-4f43-bad7-ef7ea2a2401b" class="">Ⓐ 성과발표회는 청운대학교 취<strong>·</strong>창업진로지원팀에서 진행하는 사업으로 창업실습 교과 수강 시 <strong>필수로 참여</strong>해야 하는 행사입니다. (기말고사 대체) 15주차에 예정되어 있으며, 팀당 10분 이내 분량으로 발표를 진행하게 됩니다.</p><p id="15b2628f-aa35-80c7-8ab5-d80986b6c585" class="">본래 홍성캠퍼스에서 진행되는 행사지만, 취<strong>·</strong>창업진로지원팀과의 협의가 완료되어 인천캠퍼스에서 Zoom 등의 화상회의 플랫폼을 통해 원격으로 참여할 예정입니다.</p></details></li></ul><ul id="15b2628f-aa35-807d-a2bb-d61157868083" class="toggle"><li><details close=""><summary>④ 창업실습 수강신청은 어떻게 하나요?</summary><p id="06c49c3a-1610-4e45-b978-ed8c4fc329e4" class="">Ⓐ 수강신청 시 3학점을 남겨두고 신청하면 개강 후 자동으로 수강신청이 적용됩니다. 합격자 여러분들께는 수강신청 기간 전후로 상세히 안내드리도록 하겠습니다.</p></details></li></ul><ul id="15b2628f-aa35-804a-8ef1-d94ac748f74e" class="toggle"><li><details close=""><summary>⑤ 면접은 어떻게 진행되나요?</summary><p id="f7440763-a16d-4763-b3a2-9addff673d45" class="">Ⓐ 면접은 청운대학교 인천캠퍼스에서 면접관 1:1 지원자 (또는 면접관 다수:1 지원자) 방식으로 진행됩니다. 면접에는 10분 내외의 시간이 소요되며, 적성검사와 같은 간단한 질의가 있을 예정입니다. 상세 장소는 면접 전에 알려드리겠습니다.</p></details></li></ul></div></figure><p id="15b2628f-aa35-80f7-82d4-d0ecde855fc6" class="">
-</p><h2 id="15b2628f-aa35-8031-9630-c85aa007372b" class="">지원 방법이 궁금해요.</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="35dbb462-e299-4e26-bfee-87b1c1fc4f61"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%"><strong>아래 링크를 통해 지원할 수 있습니다.</strong><blockquote id="2b1179b2-cd69-4579-8fca-f899ce91eb2c" class=""><strong><a href="https://naver.me/5GhK3HOr">https://naver.me/5GhK3HOr</a></strong></blockquote></div></figure><p id="15b2628f-aa35-807b-b1c2-e53357deca77" class="">
-</p><a href="https://naver.me/5GhK3HOr" class="floating-button">지원하기</a><a href="https://www.maruon.net/" class="home-button">←</a>
-</div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 상반기 콘텐츠랩 마루온 1기 멤버 모집 공고</title>
+    <style>
+        /* 기본 스타일 설정 */
+        html {
+            -webkit-print-color-adjust: exact;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            color: rgb(55, 53, 47);
+            white-space: pre-wrap;
+        }
+        @media only screen {
+            body {
+                margin: 2em auto;
+                max-width: 900px;
+            }
+        }
+        h1, h2, h3 {
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 1.875rem;
+            margin-top: 1.875rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 1.25rem;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+        .page-body {
+            margin: 0 auto;
+            padding: 1em;
+        }
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0.75em;
+        }
+        .callout {
+            border-radius: 3px;
+            padding: 1rem;
+            background: rgba(244, 240, 247, 0.8);
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            color: white;
+            background-color: #ea3e24;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .floating-button:hover {
+            background-color: #000000;
+            transform: scale(1.1);
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            color: white;
+            background-color: #ea3e24;
+            padding: 12px 12px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .home-button:hover {
+            background-color: #000000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <article class="page sans">
+        <header>
+            <h1 class="page-title">2025년 상반기 창업실습 - 콘텐츠랩 마루온 1기 멤버 모집 공고</h1>
+        </header>
+        <div class="page-body">
+            <p>미디어콘텐츠 창업동아리 <strong>콘텐츠랩 마루온</strong>에서 함께할 멤버를 모집합니다.</p>
+
+            <h2>콘텐츠랩 마루온이 무엇인가요?</h2>
+            <div class="callout">
+                <p><strong>콘텐츠랩 마루온</strong>은 <strong>청운대학교 인천캠퍼스 창업 동아리</strong>로, 청운대학교 <strong>창업실습</strong> 교과 및 미디어콘텐츠 제작사 <strong>프로덕션 마루온</strong>과 연계하여 운영됩니다.</p>
+            </div>
+
+            <h2>프로덕션 마루온은 이런 회사에요!</h2>
+            <div class="callout">
+                <p><strong>프로덕션 마루온</strong>은 인천광역시 송도동 소재의 영화, 광고, 웹드라마 등 다양한 콘텐츠를 제작하는 미디어 제작사입니다.</p>
+            </div>
+
+            <h2>지원 자격</h2>
+            <p>2025학년도 기준으로 청운대학교 인천캠퍼스에 재학 중인 학생 누구나 지원할 수 있습니다.</p>
+
+            <h2>지원 방법</h2>
+            <p>
+                아래 링크를 통해 지원서를 작성해주세요.<br>
+                <a href="https://naver.me/5GhK3HOr" target="_blank">지원서 작성 바로가기</a>
+            </p>
+
+            <h2>문의 사항</h2>
+            <p>
+                추가 문의사항은 아래 이메일로 연락주세요.<br>
+                <a href="mailto:alpha@maruon.net">alpha@maruon.net</a>
+            </p>
+        </div>
+    </article>
+    <a href="https://naver.me/5GhK3HOr" class="floating-button">지원하기</a>
+    <a href="https://www.maruon.net/" class="home-button">←</a>
+</body>
+</html>
