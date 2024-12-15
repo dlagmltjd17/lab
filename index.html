@@ -42,6 +42,11 @@ body {
         width: 100%; /* 테이블 너비를 100%로 설정 */
         table-layout: auto; /* 열 크기가 콘텐츠에 맞게 자동으로 조정 */
     }
+
+    /* 첫 번째 열의 텍스트 줄바꿈 방지 */
+    .collection-content table td.cell-title {
+        white-space: nowrap; /* 텍스트 줄바꿈을 방지 */
+    }
 }
 
 body {
